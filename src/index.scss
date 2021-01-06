@@ -1,0 +1,14 @@
+$primary: #2874f0;
+$danger: #ff4136;
+$theme-colors: (
+  "primary": $primary,
+  "danger": $danger
+);
+
+
+
+
+@import "~bootstrap/scss/bootstrap";
+:root{
+  background-color:#f1f3f6;
+}

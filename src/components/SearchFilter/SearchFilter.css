@@ -1,0 +1,13 @@
+.MainSearchFilter{
+    position: absolute;
+    display: flex;
+
+    flex-direction: column;
+    z-index:99;
+    margin-left: 238px;
+    top:68px;
+    width: 70%;
+}
+input{
+    border: none;
+}

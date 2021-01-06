@@ -1,0 +1,10 @@
+Button:hover{
+    background-color: white;
+    
+}
+.buttonKart{
+    height: 95%;
+    border-radius: 5px;
+    width: 110%;
+    border-width: 1px;
+}

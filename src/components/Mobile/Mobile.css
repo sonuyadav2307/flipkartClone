@@ -1,0 +1,85 @@
+.mobile-items {
+  
+  margin-top: 5px;
+  display: flex;
+}
+.eachMobile {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+ 
+  margin: 15px;
+}
+@media screen and (max-width: 1125px) {
+  .eachMobile {
+ 
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 800px) {
+  .eachMobile {
+ 
+    grid-template-columns: 1fr;
+  }
+}
+h3, p{
+  color: black;
+}
+
+.all-content {
+  display: flex;
+background-color: white;
+margin-right: 10px;
+width: 300px;
+position: relative;
+height: 400px;
+}
+.all-content:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.price {
+  font-size: 25px;
+}
+.image-container {
+  width: 50%;
+  display: flex;
+ justify-content: center;
+ text-align: center;
+ margin-top: auto;
+ margin-bottom: auto;
+ height: 85%;
+}
+.phone-content {
+  margin-inline: auto;
+  width: 50%;
+  margin-top: auto;
+ margin-bottom: auto;
+ height: 90%;
+  box-sizing: border-box;
+}
+.each-item {
+  height: 180px;
+ 
+}
+.scrachedNdiscount {
+  display: flex;
+}
+.scrathedPrice{
+  margin-right: 5px;
+}
+.buyAdd{
+  position: absolute;
+  bottom: 5px;
+text-align: center;
+margin-left: 10vh;
+margin-bottom: 15px;
+}
+.buy{
+  width: 5rem;
+  border: none;
+  border-radius: 0;
+  background-color: green;
+  text-align: center;
+  height: 2.9rem;
+
+}

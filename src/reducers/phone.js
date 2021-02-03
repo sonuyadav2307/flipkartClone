@@ -86,13 +86,13 @@ const phoneReducer = (state = combineData, action) => {
         }
         return newList;
       }
-      case 'RANGE':
-        console.log(action.payload[0])
-        console.log(state)
-        let priceList = []
-        state.filter(x =>  priceList.push(x.price.replace( /^\D+/g, '')))
-       console.log(parseInt(priceList[0].replace(/,/g,''))+1)
-        return state
+    case "RANGE":
+      console.log(action.payload[0]);
+      console.log(state);
+      let priceList = [];
+      state.filter((x) => priceList.push(x.price.replace(/^\D+/g, "")));
+      console.log(parseInt(priceList[0].replace(/,/g, "")) + 1);
+      return state;
     default:
       return state;
   }

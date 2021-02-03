@@ -2,10 +2,12 @@ import React from "react";
 import { useSelector } from "react-redux";
 import "./Kart.css";
 import Buttonn from "../Buttons/Button.js";
+
 const Kart = () => {
   const kart = useSelector((state) => state.kart);
   const length = Object.keys(kart).length;
   const value = Object.values(kart);
+
   return (
     <div className="main-kart">
       <div className="kart-items">
@@ -24,6 +26,7 @@ const Kart = () => {
                       <Buttonn name="1" />
                       <Buttonn name="+" />
                     </div>
+                    <Buttonn name="remove" type={x} />
                   </div>
                   <div className="title">
                     <p>{x.title}</p>
@@ -34,6 +37,7 @@ const Kart = () => {
                     <p>This is address</p>
                   </div>
                 </div>
+
                 <div className="border"></div>
               </div>
             </div>

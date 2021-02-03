@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Filter.css";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 import Checkbox from "../checkbox/checkbox";
 import Slider from "@material-ui/core/Slider";
@@ -14,6 +14,8 @@ const initialState = {
 const Filter = () => {
   const [value, setValue] = useState([0, 100000]);
   const dispatch = useDispatch();
+  const pho1 = useSelector((state) => state.phone);
+  console.log(pho1);
   const updateRange = (e, val) => {
     setValue(val);
 
